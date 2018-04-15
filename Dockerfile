@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk-alpine
+VOLUME /config
 VOLUME /tmp
 EXPOSE 8888
 
@@ -9,7 +10,7 @@ WORKDIR /opt/spring-cloud-config-server/
 RUN ./gradlew build && \
   cp ./build/libs/spring-cloud-config-server-*.jar /opt/spring-cloud-config-server.jar && \
   ./gradlew clean && \
-  rm -rf /usr/share/app-name-tmp/*
+  rm -rf /opt/spring-cloud-config-server/*
 
 WORKDIR /opt
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "spring-cloud-config-server.jar"]

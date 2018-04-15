@@ -1,6 +1,6 @@
 # spring-cloud-config-server
 
-[![Docker Automated buil](https://img.shields.io/docker/automated/bschalme/spring-cloud-config-server.svg?style=flat-square)](https://hub.docker.com/r/bschalme/spring-cloud-config-server/builds/)
+[![Docker Automated build](https://img.shields.io/docker/automated/bschalme/spring-cloud-config-server.svg?style=flat-square)](https://hub.docker.com/r/bschalme/spring-cloud-config-server/builds/)
 [![Image Size](https://images.microbadger.com/badges/image/bschalme/spring-cloud-config-server.svg)](https://microbadger.com/images/bschalme/spring-cloud-config-server)
 
 This is a Docker-ized version of [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-static/Edgware.SR3/multi/multi__spring_cloud_config_server.html).
