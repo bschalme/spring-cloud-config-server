@@ -1,0 +1,10 @@
+spring:  
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${CONFIG_SERVER_GIT_URI}
+server:  
+  port: 8888
