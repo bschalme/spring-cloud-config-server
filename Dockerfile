@@ -9,8 +9,8 @@ COPY . /opt/spring-cloud-config-server/
 WORKDIR /opt/spring-cloud-config-server/
 RUN ./gradlew build && \
   cp ./build/libs/spring-cloud-config-server-*.jar /opt/spring-cloud-config-server.jar && \
-  ./gradlew clean && \
-  rm -rf /opt/spring-cloud-config-server/*
+  rm -rf /opt/spring-cloud-config-server/* && \
+  rm -rf ~/.gradle/caches/modules-2/files-2.1/*
 
 WORKDIR /opt
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "spring-cloud-config-server.jar"]
