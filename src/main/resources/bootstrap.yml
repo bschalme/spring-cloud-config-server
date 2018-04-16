@@ -5,6 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: ${CONFIG_SERVER_GIT_URI}
+          uri: ${SPRING_CLOUD_CONFIG_SERVER_GIT_URI}
 server:  
   port: 8888
